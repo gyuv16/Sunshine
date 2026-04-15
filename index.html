@@ -67,3 +67,26 @@
 
 </body>
 </html>
+
+<script>
+    // Add a mobile menu button to your Nav in HTML first: 
+    // <button id="menu-btn" class="md:hidden">MENU</button>
+
+    const btn = document.getElementById('menu-btn');
+    const nav = document.querySelector('.hidden.md:flex');
+
+    if(btn) {
+        btn.addEventListener('click', () => {
+            nav.classList.toggle('hidden');
+            nav.classList.toggle('flex');
+            nav.classList.toggle('flex-col');
+            nav.classList.toggle('absolute');
+            nav.classList.toggle('top-20');
+            nav.classList.toggle('left-0');
+            nav.classList.toggle('w-full');
+            nav.classList.toggle('bg-white');
+            nav.classList.toggle('p-8');
+            nav.classList.toggle('space-y-4');
+        });
+    }
+</script>
