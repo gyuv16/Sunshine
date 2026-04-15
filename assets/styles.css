@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;800&family=Playfair+Display:ital,wght@0,700;1,700&display=swap');
+
+:root {
+    --sunfruit-orange: #FFD8A8;
+    --sunfruit-peach: #FFF4E6;
+    --soft-blue: #E7F5FF;
+    --soft-green: #EBFBEE;
+    --glass: rgba(255, 255, 255, 0.65);
+}
+
+body {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    background: #FAFAFA;
+    cursor: default;
+}
+
+.h-serif { font-family: 'Playfair Display', serif; }
+
+.bento-card {
+    background: var(--glass);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    border-radius: 32px;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.bento-card:hover {
+    transform: scale(1.02);
+    box-shadow: 0 30px 60px rgba(0,0,0,0.04);
+}
+
+.gradient-bg {
+    background: radial-gradient(circle at top right, var(--sunfruit-orange), transparent 40%),
+                radial-gradient(circle at bottom left, var(--soft-blue), transparent 40%);
+}
+
+.nav-blur {
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: saturate(180%) blur(20px);
+}
